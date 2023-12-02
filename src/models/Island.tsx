@@ -59,6 +59,7 @@ export default function Island({
   const handlePointerMove = (event) => {
     event.stopPropagation();
     event.preventDefault();
+
     if (isRotating) {
       // If rotation is enabled, calculate the change in clientX position
       const clientX = event.touches ? event.touches[0].clientX : event.clientX;
