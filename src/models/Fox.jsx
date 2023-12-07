@@ -14,7 +14,6 @@ const Fox = ({ currentAnimation, ...props }) => {
     }
   }, [actions, currentAnimation]);
 
-  useEffect(() => {}, [actions, currentAnimation]);
   return (
     <group ref={group} {...props} dispose={null}>
       <group name="Sketchfab_Scene">
